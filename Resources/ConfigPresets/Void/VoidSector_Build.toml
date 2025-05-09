@@ -15,6 +15,7 @@ desc = "VoidSector Build"
 hostname = "Пустотная Стройка"
 soft_max_players = 60
 lobbyenabled = false
+defaultpreset = "Sandbox"
 fallbackpreset = "Sandbox"
 map = "Empty"
 role_timers = false
@@ -53,6 +54,7 @@ auto_call_time = 0
 emergency = false
 arrivals = false
 preload_grids = false
+mass_limit = 6500
 
 ################################################################################
 ##### In Game ##################################################################
@@ -62,6 +64,9 @@ space_wind = false
 
 [biomass]
 easy_mode = false
+
+[control]
+storage_limit = 10
 
 [vote]
 timermap = 30

@@ -6,7 +6,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Medical
-      time: 14400 #4 hrs
+      time: 18000 #5 hrs
   startingGear: ChemistGear
   icon: "JobIconChemist"
   supervisors: job-supervisors-cmo
@@ -14,6 +14,10 @@
   - Medical
   - Chemistry
   - Maintenance
+  minBankBalance: 550
+  maxBankBalance: 650
+  wageDepartment: Medical
+  wage: 60
 
 - type: startingGear
   id: ChemistGear

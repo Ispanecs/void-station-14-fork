@@ -10,6 +10,7 @@ using JetBrains.Annotations;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using System.Linq;
+using Robust.Shared.Timing;
 using Content.Shared.Mind;
 
 namespace Content.Server.Store.Systems;
@@ -22,6 +23,7 @@ public sealed partial class StoreSystem : EntitySystem
 {
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly SharedPopupSystem _popup = default!;
+    [Dependency] private readonly IGameTiming _timing = default!;
 
     public override void Initialize()
     {
@@ -202,3 +204,12 @@ public sealed class CurrencyInsertAttemptEvent : CancellableEntityEventArgs
         Store = store;
     }
 }
+
+/// <summary>
+/// Raised on an item when it is purchased.
+/// An item may need to set it upself up for its purchaser.
+/// For example, to make sure it isn't hostile to them or
+/// to make sure it fits their apperance.
+/// </summary>
+[ByRefEvent]
+public readonly record struct ItemPurchasedEvent(EntityUid Purchaser);

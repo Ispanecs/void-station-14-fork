@@ -6,7 +6,7 @@
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering
-      time: 14400 #4 hrs
+      time: 9000 #2.5 hrs
   startingGear: StationEngineerGear
   icon: "JobIconStationEngineer"
   supervisors: job-supervisors-ce
@@ -16,6 +16,10 @@
   - External
   extendedAccess:
   - Atmospherics
+  minBankBalance: 550
+  maxBankBalance: 650
+  wageDepartment: Engineering
+  wage: 50
 
 - type: startingGear
   id: StationEngineerGear

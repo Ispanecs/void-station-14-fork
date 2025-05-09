@@ -1,8 +1,8 @@
 - type: cargoProduct
   id: EngineAmeShielding
   icon:
-    sprite: Objects/Power/AME/ame_part.rsi
-    state: box
+    sprite: Objects/Devices/flatpack.rsi
+    state: ame-part
   product: CrateEngineeringAMEShielding
   cost: 6000
   category: cargoproduct-category-name-engineering
@@ -50,12 +50,11 @@
 
 - type: cargoProduct
   id: EngineSingularityEmitter
-  description: "Contains an emitter. Used only for dangerous applications."
   icon:
     sprite: Structures/Power/Generation/Singularity/emitter.rsi
     state: emitter
   product: CrateEngineeringSingularityEmitter
-  cost: 3000
+  cost: 1500
   category: cargoproduct-category-name-engineering
   group: market
 

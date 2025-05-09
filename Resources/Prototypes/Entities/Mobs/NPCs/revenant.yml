@@ -72,9 +72,10 @@
     - StolenEssence
   - type: RandomMetadata
     nameSegments:
-    - RevenantType
-    - RevenantAdjective
-    - RevenantTheme
+    - NamesRevenantType
+    - NamesRevenantAdjective
+    - NamesRevenantTheme
+    nameFormat: name-format-revenant
   - type: Speech
     speechVerb: Ghost
   - type: Reactive

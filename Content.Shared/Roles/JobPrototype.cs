@@ -1,3 +1,4 @@
+using Content.Shared.FixedPoint;
 using Content.Shared.Access;
 using Content.Shared.Guidebook;
 using Content.Shared.Players.PlayTimeTracking;
@@ -10,7 +11,7 @@ namespace Content.Shared.Roles
     /// <summary>
     ///     Describes information for a single job on the station.
     /// </summary>
-    [Prototype("job")]
+    [Prototype]
     public sealed partial class JobPrototype : IPrototype
     {
         [ViewVariables]
@@ -153,6 +154,17 @@ namespace Content.Shared.Roles
         /// </summary>
         [DataField]
         public List<ProtoId<GuideEntryPrototype>>? Guides;
+
+        [DataField("wageDepartment", customTypeSerializer: typeof(PrototypeIdSerializer<DepartmentPrototype>))]
+        public string? WageDepartment { get; private set; }
+
+        [DataField("minBankBalance")]
+        public int MinBankBalance { get; private set; } = 0;
+
+        [DataField("maxBankBalance")]
+        public int MaxBankBalance { get; private set; } = 0;
+        [DataField("wage")]
+        public FixedPoint2 Wage { get; private set; } = 0;
     }
 
     /// <summary>

@@ -63,3 +63,31 @@
     sprite: Void/Clothing/Uniforms/Jumpsuit/dripsuit.rsi
   - type: Clothing
     sprite: Void/Clothing/Uniforms/Jumpsuit/dripsuit.rsi
+
+- type: entity
+  parent: [ClothingUniformBase, BaseSecurityContraband]
+  id: ClothingUniformCorporateUniform
+  name: корпоративная форма СБ
+  description: Покажите всем как сильно вы любите своего №1 держателя цен на рынке плазмы! Не дает юредической защиты от превышения полномочий или летальной силы.
+  components:
+  - type: Sprite
+    sprite: Void/Clothing/Uniforms/CorporateSB.rsi
+  - type: Clothing
+    sprite: Void/Clothing/Uniforms/CorporateSB.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingMedievalHauberk
+  name: кольчужный доспех
+  description: Обычный кольчужный доспех, сплетенный из колец. Исскустная работа.
+  components:
+  - type: Sprite
+    sprite: Void/Clothing/Uniforms/hauberk.rsi
+  - type: Clothing
+    sprite: Void/Clothing/Uniforms/hauberk.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.95
+        Slash: 0.95
+        Piercing: 0.95

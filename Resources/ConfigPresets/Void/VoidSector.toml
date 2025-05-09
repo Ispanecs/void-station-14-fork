@@ -22,17 +22,18 @@ desc = """
 Пустотный сектор готов предоставить вам:
 [🎭] Отличный уровень ролевого отыгрыша.
 [📡] Отзывчивая и всегда готовая помочь администрация.
-[🌌] Увеличенное количество рас, от таяран до уникальных катунианцев.
+[📝] Возможность играть за сотрудников ЦентКома. Отвечайте на запросы или отклоняйте их как сами того пожелаете!
 [💪] Система ношения на руках, вам больше не надо таскать кого-то за собой!
+[🔪] Рецепты для готовки прямо в игре. Не надо гадать что можно, а что нельзя приготовить!
 [👻] Система возрождения, теперь вам не нужно просить администратора возродить вас!
 [⚒️] Увеличенное количество рецептов строительства, строй что душа желает!
-[🔞] ЕРП чат повышенной конфиденциальности.
 [🌐] Собственная Википедия и лор сектора! История вершится вокруг вас!
 
-Присоединяйтесь к Пустотному Сектору, полному неожиданностей и опасностей. Слава NanoTrasen!
+Присоединяйтесь к Пустотному Сектору, полному неожиданностей и опасностей!
 """
 soft_max_players = 100
 lobbyduration = 180
+defaultpreset = "Extended"
 fallbackpreset = "Extended"
 map_pool = "VoidMapPool"
 
@@ -43,8 +44,6 @@ auto_record = true
 advertise = true
 tags = "lang:ru,region:eu_e,rp:med,18+"
 server_url = "ss14://37.27.103.62:1212"
-# Comma-separated list of URLs of hub servers to advertise to.
-# hub_urls = "https://spacestationmultiverse.com/hub/,https://hub.spacestation14.com/"
 
 [server]
 rules_file = "VoidRuleset"
@@ -87,6 +86,9 @@ mmos_max_wind = 1000.0
 [biomass]
 easy_mode = false
 
+[control]
+storage_limit = 2
+
 [whitelist]
 enabled = true
 prototype_list = "voidSectorWhitelist"
@@ -94,7 +96,7 @@ prototype_list = "voidSectorWhitelist"
 [vote]
 timermap = 30
 map_enabled = true
-restart_not_allowed_when_admin_online = true
+restart_not_allowed_when_admin_online = false
 
 [shuttle]
 arrivals_planet = false
@@ -106,6 +108,7 @@ recall_turning_point = 0.1
 auto_call_time = 300
 auto_call_extension_time = 90
 arrivals_map = "Maps_Void/Misc/terminal.yml"
+mass_limit = 6500
 
 [rules]
 time = 90.0

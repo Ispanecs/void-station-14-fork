@@ -11,6 +11,10 @@
   - Maintenance
   extendedAccess:
   - Chemistry
+  minBankBalance: 550
+  maxBankBalance: 650
+  wageDepartment: Medical
+  wage: 50
 
 - type: startingGear
   id: PsychologistGear

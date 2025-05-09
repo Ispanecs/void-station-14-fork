@@ -73,3 +73,5 @@
       - WantedListCartridge
       - MedTekCartridge
       - NanoChatCartridge # DeltaV
+      - BankCartridge
+      - NanoTaskCartridge

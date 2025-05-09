@@ -16,9 +16,11 @@
   - HandheldGPSBasic
   - TRayScanner
   - UtilityBelt
+  - ClothingOuterVestTank
   - HandheldStationMap
   - ClothingHeadHatWelding
   - ClothingHeadHatCone
+  - Eftpos
 
 - type: latheRecipePack
   id: AtmosStatic

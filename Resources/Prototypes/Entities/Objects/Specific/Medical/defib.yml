@@ -96,8 +96,18 @@
   - type: UseDelay
 
 - type: entity
-  id: DefibrillatorSyndicate
+  id: DefibrillatorCompactEmpty
   parent: DefibrillatorCompact
+  suffix: Empty
+  components:
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+
+- type: entity
+  id: DefibrillatorSyndicate
+  parent: [ DefibrillatorCompact, BaseSyndicateContraband ]
   name: interdyne defibrillator
   description: Doubles as a self-defense weapon against war-crime inclined tiders.
   components:

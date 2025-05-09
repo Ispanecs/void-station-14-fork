@@ -10,7 +10,7 @@ namespace Content.Shared.Store;
 ///     Mainly used for antags, such as traitors, nukies, and revenants
 ///     This is separate to the cargo ordering system.
 /// </summary>
-[Prototype("currency")]
+[Prototype]
 [DataDefinition, Serializable, NetSerializable]
 public sealed partial class CurrencyPrototype : IPrototype
 {
@@ -37,4 +37,7 @@ public sealed partial class CurrencyPrototype : IPrototype
     /// </summary>
     [DataField("canWithdraw")]
     public bool CanWithdraw { get; private set; } = true;
+
+    [DataField("currencySymbol")]
+    public string CurrencySymbol { get; private set; } = string.Empty;
 }
